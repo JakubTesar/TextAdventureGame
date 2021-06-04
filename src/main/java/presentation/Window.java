@@ -16,7 +16,7 @@ public class Window extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/exemple.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Game.fxml"));
 
         Scene scene = new Scene(root, 800, 600);
         primaryStage.setScene(scene);
