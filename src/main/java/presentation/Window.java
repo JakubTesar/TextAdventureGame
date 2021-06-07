@@ -10,17 +10,21 @@ import java.io.IOException;
 
 public class Window extends Application {
 
+    public static Stage stage;
+
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("/Game.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Menu.fxml"));
 
         Scene scene = new Scene(root, 800, 600);
         primaryStage.setScene(scene);
         primaryStage.show();
+        stage = primaryStage;
+
 
     }
 }

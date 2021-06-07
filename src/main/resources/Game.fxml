@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -13,7 +14,7 @@
             <Font size="17.0" />
          </font>
       </Button>
-      <Button fx:id="downButt" layoutX="509.0" layoutY="79.0" mnemonicParsing="false" onAction="#clickDownButt" text="↓" textFill="RED">
+      <Button fx:id="downButt" layoutX="509.0" layoutY="122.0" mnemonicParsing="false" onAction="#clickDownButt" text="↓" textFill="RED">
          <font>
             <Font size="17.0" />
          </font>
@@ -38,6 +39,9 @@
             <Font name="Arial Black" size="17.0" />
          </font>
       </Text>
-      <ImageView fitHeight="256.0" fitWidth="357.0" layoutX="35.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageview" fitHeight="256.0" fitWidth="357.0" layoutX="35.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Room.jpg" />
+         </image></ImageView>
    </children>
 </AnchorPane>
