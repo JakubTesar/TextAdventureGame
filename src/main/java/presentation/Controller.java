@@ -42,8 +42,8 @@ public class Controller {
         }
     }
 
-    public void movingIf(Room roomFrom, Room roomTo) {
-        if (lobby.isInRoom()) {
+    public void movingIf(Room roomFrom, Room roomTo, Room roomCoJaKurvaVim) {
+        if (roomCoJaKurvaVim.isInRoom()) {
             imageview.setImage(roomTo.getImage());
             roomFrom.setInRoom(false);
             roomTo.setInRoom(true);
@@ -68,23 +68,24 @@ public class Controller {
     }
 
     public void clickUpButt(ActionEvent actionEvent) {
-        movingIf(lobby, room1);
+        movingIf(lobby, room1, lobby);
         movingIfLobby(room3);
+        movingIf(room5, room3, room5);
     }
 
     public void clickDownButt(ActionEvent actionEvent) {
-        movingIf(room3, room5);
-        movingIf(lobby, room3);
+        movingIf(room3, room5, room3);
+        movingIf(lobby, room3, lobby);
         movingIfLobby(room1);
     }
 
     public void clickRightButt(ActionEvent actionEvent) throws IOException {
-        movingIf(lobby, room2);
+        movingIf(lobby, room2, lobby);
         movingIfLobby(room4);
     }
 
     public void clickLeftButt(ActionEvent actionEvent) {
-        movingIf(lobby, room4);
+        movingIf(lobby, room4, lobby);
         movingIfLobby(room2);
     }
 
