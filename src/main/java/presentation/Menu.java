@@ -10,7 +10,6 @@ import logic.Room;
 import java.io.IOException;
 
 public class Menu {
-    Controller con = new Controller();
 
     public void playButtonClick(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/Game.fxml"));

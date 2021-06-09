@@ -43,5 +43,10 @@
          <image>
             <Image url="@Room.jpg" />
          </image></ImageView>
+      <Button fx:id="killButton" layoutX="457.0" layoutY="290.0" mnemonicParsing="false" onAction="#onClickKillButton" prefHeight="74.0" prefWidth="117.0" style="-fx-background-color: grey; visibility: block;" text="Kill" textFill="RED">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
