@@ -27,13 +27,14 @@ public class Controller {
     Image imageIssac = new Image("/IssacEnemy.jpg");
     Image imageIssac2 = new Image("/FatFuck.jpg");
     Image imageLava = new Image("/Lava.jpg");
+    Image imageAnitaMad = new Image("/AnitaChceUmrit.png");
 
     Room lobby = new Room("Lobby", "Hi go and die in the dungeon", true, imageRoom, false);
     Room room1 = new Room("Chest room", "Go and open the chest :)", false, imageChest, false);
     Room room2 = new Room("Enemy", "Go and kill that fucker", false, imageIssac, true);
     Room room3 = new Room("Enemy", "Kill that fat thing", false, imageIssac2, true);
     Room room4 = new Room("Lava", "Jump in the lava and die", false, imageLava, true);
-    Room room5 = new Room("Anita", "Anita the epic skeleton girl boss", false, imageLava, true);
+    Room room5 = new Room("Anita", "Anita the epic skeleton girl boss", false, imageAnitaMad, true);
 
     public void setKillButton(Room room) {
         if (room.isCanKill()) {

@@ -24,7 +24,5 @@ public class Window extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
         stage = primaryStage;
-
-
     }
 }
